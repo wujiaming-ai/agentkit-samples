@@ -106,8 +106,7 @@ You must return three types of information:
 URL (`https://example.com/video1.mp4`)
 
 3. Markdown format, for example:
-
-```markdown
+```
 <video src="https://example.com/video1.mp4" width="640" controls>视频1</video>
 <video src="https://example.com/video2.mp4" width="640" controls>视频2</video>
 ```
