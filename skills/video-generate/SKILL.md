@@ -20,7 +20,7 @@ This skill generates videos using Doubao Seedance 1.0/1.5 models.
 
 Before using this skill, ensure the following environment variables are set:
 
-- `MODEL_VIDEO_API_KEY` or `MODEL_AGENT_API_KEY`: API key for the video generation service
+- `ARK_API_KEY` or `MODEL_VIDEO_API_KEY` or `MODEL_AGENT_API_KEY`: API key for the video generation service
 - `MODEL_VIDEO_API_BASE`: API base URL (optional, has default)
 - `MODEL_VIDEO_NAME`: Model name (optional, has default)
 
