@@ -2,7 +2,6 @@ import argparse
 import asyncio
 import json
 import os
-import sys
 import time
 import requests
 from typing import Dict

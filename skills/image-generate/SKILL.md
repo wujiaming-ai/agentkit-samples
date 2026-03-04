@@ -93,7 +93,7 @@ Note: the URL is the 'url' in the success_list of script return info.
 
 ## Final Return Info
 You should return three types of information:
-1. File format, return the image and the local path of the image, for example:
+1. File format, return the image file (if you have some other methods to send the image file) and the local path of the image, for example:
 local_path: /root/.openclaw/workspace/skills/image-generate/xxx.png
 2. URL format, for example:
 URL (https://example.com/image1.png)
