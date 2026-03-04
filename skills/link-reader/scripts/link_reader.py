@@ -20,7 +20,7 @@ from volcenginesdkarkruntime._models import BaseModel
 from volcenginesdkarkruntime import AsyncArk
 from veadk.utils.logger import get_logger
 from httpx import Timeout
-from veadk.config import getenv, settings
+from veadk.config import settings
 
 logger = get_logger(__name__)
 
