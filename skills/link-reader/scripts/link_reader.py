@@ -41,9 +41,13 @@ async def link_reader(url_list: list[str]) -> dict:
         logger.error(f"link_reader url_list is empty")
         return {}
 
-    api_key = (os.getenv("ARK_API_KEY") or os.getenv("MODEL_AGENT_API_KEY"))
+    api_key = os.getenv("ARK_API_KEY") or os.getenv(
+        "MODEL_AGENT_API_KEY", settings.model.api_key
+    )
     if not api_key:
-        raise PermissionError("ARK_API_KEY or MODEL_AGENT_API_KEY is not set in environment variables.")
+        raise PermissionError(
+            "ARK_API_KEY or MODEL_AGENT_API_KEY is not set in environment variables."
+        )
 
     try:
         client = AsyncArk(
@@ -53,7 +57,6 @@ async def link_reader(url_list: list[str]) -> dict:
     except Exception as e:
         logger.error(f"link_reader client init failed:{e}")
         return {}
-
 
     body = {
         "action_name": "LinkReader",
